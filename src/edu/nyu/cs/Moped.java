@@ -142,8 +142,8 @@ public class Moped {
                     }
                 } else {
                     this.orientation = "east";
-                    if (ave != 1) {
-                        --this.aveLoc;
+                    if (ave != 10) {
+                        ++this.aveLoc;
                         this.gas = this.gas - 5;
                     }
                 }
@@ -152,12 +152,12 @@ public class Moped {
                 if (this.forward) {
                     this.orientation = "east";
                     if (ave != 1) {
-                        ++this.aveLoc;
+                        --this.aveLoc;
                         this.gas = this.gas - 5;
                     }
                 } else {
                     this.orientation = "west";
-                    if (ave != 10) {
+                    if (ave != 1) {
                         --this.aveLoc;
                         this.gas = this.gas - 5;
                     }
@@ -172,8 +172,8 @@ public class Moped {
                     }
                 } else {
                     this.orientation = "south";
-                    if (street != 1) {
-                        --this.streetLoc;
+                    if (street != 200) {
+                        ++this.streetLoc;
                         this.gas = this.gas - 5;
                     }
                 }
@@ -186,8 +186,8 @@ public class Moped {
                     }
                 } else {
                     this.orientation = "north";
-                    if (street != 200) {
-                        ++this.streetLoc;
+                    if (street != 1) {
+                        --this.streetLoc;
                         this.gas = this.gas - 5;
                     }
                 }
@@ -220,8 +220,8 @@ public class Moped {
                     }
                 } else {
                     this.orientation = "west";
-                    if (ave != 10) {
-                        ++this.aveLoc;
+                    if (ave != 1) {
+                        --this.aveLoc;
                         this.gas = this.gas - 5;
                     }
                 }
@@ -235,8 +235,8 @@ public class Moped {
                     }
                 } else {
                     this.orientation = "east";
-                    if (ave != 1) {
-                        --this.aveLoc;
+                    if (ave != 10) {
+                        ++this.aveLoc;
                         this.gas = this.gas - 5;
                     }
                 }
@@ -250,8 +250,8 @@ public class Moped {
                     }
                 } else {
                     this.orientation = "north";
-                    if (street != 200) {
-                        ++this.streetLoc;
+                    if (street != 1) {
+                        --this.streetLoc;
                         this.gas = this.gas - 5;
                     }
                 }
@@ -264,8 +264,8 @@ public class Moped {
                     }
                 } else {
                     this.orientation = "south";
-                    if (street != 1) {
-                        --this.streetLoc;
+                    if (street != 200) {
+                        ++this.streetLoc;
                         this.gas = this.gas - 5;
                     }
                 }
