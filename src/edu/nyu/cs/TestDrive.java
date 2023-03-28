@@ -48,6 +48,12 @@ public class TestDrive {
             case "park":
                 m.park();
                 break;
+            case "go to Xi'an Famous Foods":
+                m.goToXianFamousFoods();
+                break;
+            case "help":
+                System.out.println(m.getHelp());
+                break;
             default:
                 System.out.println("I'm sorry, I don't understand that command. Type 'help' for a list of commands");
         }      
